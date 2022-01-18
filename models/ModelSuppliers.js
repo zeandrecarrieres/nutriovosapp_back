@@ -4,11 +4,11 @@ const SuppliersSchema = new mongoose.Schema(
   {
     type: {
       type: String,
-      required: true,
+      required: false,
     },
     category: {
       type: String,
-      required: true,
+      required: false,
     },
     nick: {
       type: String,
@@ -20,16 +20,16 @@ const SuppliersSchema = new mongoose.Schema(
     },
     email: {
       type: String,
-      required: true,
+      required: false,
     },
     telephone: {
       type: String,
-      required: true,
+      required: false,
     },
 
     address: {
       type: String,
-      required: true,
+      required: false,
     },
     complement: {
       type: String,
@@ -37,23 +37,23 @@ const SuppliersSchema = new mongoose.Schema(
     },
     district: {
       type: String,
-      required: true,
+      required: false,
     },
     city: {
       type: String,
-      required: true,
+      required: false,
     },
     state: {
       type: String,
-      required: true,
+      required: false,
     },
     postal: {
       type: String,
-      required: true,
+      required: false,
     },
     cnp: {
       type: String,
-      required: true,
+      required: false,
     },
     inscription: {
       type: String,
@@ -65,7 +65,7 @@ const SuppliersSchema = new mongoose.Schema(
     }
   },
   {
-    timestamps: true,
+    timestamps: false,
   }
 );
 
